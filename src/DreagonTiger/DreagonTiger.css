@@ -27,3 +27,18 @@
 .card-front {
   transform: rotateY(180deg);
 }
+
+@keyframes flyToBet {
+  0% {
+    transform: translate(-50%, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -300px) scale(0.5); /* Adjust -300px based on height */
+    opacity: 1;
+  }
+}
+.animate-fly-to-bet {
+  animation: flyToBet 0.8s ease forwards;
+}
+
