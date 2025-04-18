@@ -109,20 +109,20 @@ const DreagonTiger = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-800 via-pink-600 to-red-500 flex items-center justify-center p-2 sm:p-4">
+    <div className="min-h-screen bg-gradient-to-r from-gray-900 to-black flex items-center justify-center">
       {showConfetti && <Confetti width={width} height={height} />}
       <div
         className={`${
           width <= 640
             ? ""
             : "bg-white/10 backdrop-blur-md border border-white/20"
-        } rounded-2xl p-4 sm:p-8 w-full max-w-3xl text-center transition-all duration-500 ${
+        } rounded-2xl w-full max-w-3xl text-center transition-all duration-500 ${
           shake ? "animate-shake" : ""
         } ${
-          width <= 640 ? "shadow-none" : "shadow-lg" // Remove shadow on mobile view
+          width <= 640 ? "shadow-none" : "shadow-lg" 
         }`}
       >
-        <div className="w-full flex justify-between items-center mb-4">
+        <div className="w-full px-3 flex justify-between items-center">
           <div className="inline-block text-white text-base sm:text-lg font-bold bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 px-3 py-1 rounded-lg shadow">
             💰 <span className="text-yellow-300">{coins}</span>
           </div>
